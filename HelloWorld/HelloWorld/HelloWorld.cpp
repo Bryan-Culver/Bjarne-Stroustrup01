@@ -18,7 +18,7 @@ int main()
 	// read input from user
 	cin >> first_name;
 	cin >> age;
-	cout >> "Hello, " << first_name <<"(age "<<age<<")!\n";
+	cout << "Hello, " << first_name << "(age " << age << ")!\n";
 	return 0;
 }
 
