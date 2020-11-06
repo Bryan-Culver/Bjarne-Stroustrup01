@@ -13,12 +13,17 @@ int main()
 	
 	// instantiate variables
 	string first_name = "???";
-	int age = -1;
+	double age = -1;
 
 	// read input from user
 	cin >> first_name;
 	cin >> age;
+
+	// Take submitted age and convert to months
+	int months = age*12;
+
 	cout << "Hello, " << first_name << "(age " << age << ")!\n";
+	cout << "You are "<<months<<" months old.\n";
 	return 0;
 }
 
