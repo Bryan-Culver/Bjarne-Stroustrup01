@@ -9,10 +9,16 @@
 
 int main()
 {
-	cout << "Please enter your first name (followed by 'enter'):\n";	// prints to output
-	string first_name; 			// first_name is a variable of type string
-	cin >> first_name;			// reads characters into first_name
-	cout >> "Hello, " << first_name << "!\n";
+	cout << "Please enter your first name and your age:\n";	// prints to output
+	
+	// instantiate variables
+	string first_name = "???";
+	int age = -1;
+
+	// read input from user
+	cin >> first_name;
+	cin >> age;
+	cout >> "Hello, " << first_name <<"(age "<<age<<")!\n";
 	return 0;
 }
 
