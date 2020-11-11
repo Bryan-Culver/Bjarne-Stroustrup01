@@ -22,9 +22,9 @@ int main()
     cout << "\nDear " << firstName << ",\n";
     cout << "How have you been? I'm sorry it's been so long since we have corresponded.";
     cout << "\nHave you seen " << friendName << " recently? We bumped into each other the other day.\n";
-    if (friendGender=="m")
+    if (friendGender=='m')
         cout << "If you see " << friendName << ", please ask him to call me, I think I still have his thermos.\n";
-    else if (friendGender=="f")
+    else if (friendGender=='f')
         cout << "If you see " << friendName << ", please ask her to call me, I think I still have her thermos.\n";
 
     /*cout << "Please enter a floating-point value: ";
