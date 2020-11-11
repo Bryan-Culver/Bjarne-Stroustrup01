@@ -19,6 +19,9 @@ int main()
     cout << "Enter 'm' if the friend is a male, or 'f' if the friend is female:\n";
     char friendGender = 0;
     cin >> friendGender;
+    cout << "Enter the age of the person you're writing to:\n";
+    int age = -1;
+    cin >> age;
     cout << "\nDear " << firstName << ",\n";
     cout << "How have you been? I'm sorry it's been so long since we have corresponded.";
     cout << "\nHave you seen " << friendName << " recently? We bumped into each other the other day.\n";
@@ -26,7 +29,12 @@ int main()
         cout << "If you see " << friendName << ", please ask him to call me, I think I still have his thermos.\n";
     else if (friendGender=='f')
         cout << "If you see " << friendName << ", please ask her to call me, I think I still have her thermos.\n";
-
+    cout << "I hear you just had a birthday and you are " << age << " years old.\n";
+    if (age<0 | age>110) simple_error("you're kidding!");
+    if (age<12) cout << "Next year you will be "<<age+1<<".\n";
+    if (age==17) cout << "Next year, you will be able to vote.\n";
+    if (age>70) cout << "I hope you are enjoying retirement.\n";
+    cout << "Yours Truely, \n\nBryan Culver";
     /*cout << "Please enter a floating-point value: ";
     int n;
     cin >> n;
@@ -40,5 +48,5 @@ int main()
         << "\nsquare root of n == " << sqrt(nn)
         << endl;
 */
-    
+return 0;
 }
