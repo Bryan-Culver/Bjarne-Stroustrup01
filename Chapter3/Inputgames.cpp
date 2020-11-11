@@ -1,8 +1,9 @@
-// Inputgames takes user input and demonstrates concepts of Objects, Types, and Values
+// Inputgames takes user input and demonstrates concepts of Objects, Types, and Values. 
+// For reference, this follows the drills starting on page 83. 
 // Author: Bryan Culver
 // Date Created: 09 Nov 2020
 // Date Modified: 09 Nov 2020
-// Version: 0.2 09 Nov 2020
+// Version: 1.0 09 Nov 2020
 
 #include "../std_lib_facilities.h"
 
@@ -35,18 +36,5 @@ int main()
     if (age==17) cout << "Next year, you will be able to vote.\n";
     if (age>70) cout << "I hope you are enjoying retirement.\n";
     cout << "Yours Truely, \n\nBryan Culver";
-    /*cout << "Please enter a floating-point value: ";
-    int n;
-    cin >> n;
-    double nn = n;
-    cout << "n == " << n 
-        << "\nn+1 == " << n+1
-        << "\nthree times n == " << 3*n
-        << "\ntwice n == " << n+n
-        << "\nn squared == " << n*n 
-        << "\nhalf of n == " << n/2 
-        << "\nsquare root of n == " << sqrt(nn)
-        << endl;
-*/
-return 0;
+    return 0;
 }
